@@ -6,8 +6,8 @@ const UserSchema = new Schema({
     userName: {required: true, type: String},
     password: {required: true, type: String},
     confirmed_hash: {required: true, type: String},
+    confirmed: {type: Boolean, default: false},
     location: String,
-    confirmed: Boolean,
     about: String,
     website: String,
 })
