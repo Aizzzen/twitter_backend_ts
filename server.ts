@@ -1,6 +1,8 @@
+import dotenv from "dotenv"
 import express from 'express'
 import {UserCtrl} from "./controllers/UserController";
 import {registerValidations} from "./validations/register";
+dotenv.config()
 
 const app = express()
 
